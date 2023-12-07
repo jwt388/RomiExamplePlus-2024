@@ -13,6 +13,7 @@ Extension of the RomiReference example in WPILib to pull in additional features 
 - Allow startup of driver station
 - Trigger new commands from the controller
 - More Autonomous Commands
+- Show examples of setting parameters at runtime using SmartDashboard.getNumber, Network Table getEntry and preferences. These are enabled through flags in the Constants file.
 
 ## Controller Triggered Commands
 - X: Turn to 90 degrees
@@ -23,6 +24,8 @@ Extension of the RomiReference example in WPILib to pull in additional features 
 
 ## Autonomous Commands
 - Drive a box pattern
-- Turn to 0 degrees using PID control from the gyro
-- Drive a specified distance using PID or profiled PID control 
-- Follow a trajectory with a Ramsete controller
+- Turn to 0 degrees using PID control from the gyro (controller tuned via SmartDashboard.getNumber)
+- Drive a specified distance using PID control (controller tuned via Network Table getEntry)
+- Drive a specified distance using profiled PID control (controller tuned via preferences)
+- Follow a trajectory with a Ramsete controller following a path generated from a list of points
+- Follow a trajectory with a Ramsete controller following a path generated from PathWeaver
